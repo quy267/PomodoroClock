@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A Pomodoro Clock</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <!--<link type="text/css" rel="stylesheet" href="css/bootstrap.css">-->
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
+<body class="teal">
+
+<div class="container">
+    <div class="row ">
+        <h1 class="center-align" style="font-family: 'Baskerville Old Face'">Pomodoro Clock</h1>
+    </div>
+
+    <div class="row">
+        <div class=" push-xs-4 center-align">
+            <button id="pause" class="col-xs-3 btn m-l-1 blue hide" type="button">
+                <i class="material-icons">pause</i>
+            </button>
+            <button id="play" class="col-xs-3 btn m-l-1 green" type="button">
+                <i class="material-icons">play_arrow</i>
+            </button>
+            <button id="stop" class="col-xs-3 btn m-l-1 red" type="button">
+                <i class="material-icons">stop</i>
+            </button>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 30px">
+        <div class="teal clock">
+            <div class="timer center-align">
+                <p class="type white-text">SESSION</p>
+                <p class="time white-text"><span class="minutes">25</span>:<span class="seconds">00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row center-align" style="margin-top: -30px">
+        <div class="col s2 input-field offset-s4">
+            <p>Session Length</p>
+            <input id="session" type="number" class="valid" min="1" max="60" value="25" style="margin-top: -10px">
+        </div>
+        <div class="col s2 input-field">
+            <p>Break Length</p>
+            <input id="break" type="number" class="valid" min="1" max="20" value="5" style="margin-top: -10px">
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+        integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"
+        integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

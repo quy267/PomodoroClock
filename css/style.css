@@ -1,0 +1,35 @@
+.clock {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 6px solid greenyellow;
+    background: linear-gradient(0deg, #1de9b6 0%, #1de9b6 100%, #004d40 100%);
+    padding: 40px;
+}
+
+.timer {
+    position: absolute;
+    top: 107px;
+    left: 90px;
+}
+
+.timer > p.type {
+    line-height: 0;
+}
+
+.timer > p.time {
+    font-size: 3.5em;
+    line-height: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* valid color */
+.input-field input[type=number].valid {
+    border-bottom: 1px solid darkslategray;
+    box-shadow: 0 1px 0 0 darkslategray;
+}
+
+
